@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Supreme Detailing — elite automotive detailing, ceramic coating and mobile car care. Book and track your appointment online.">
+  <meta name="theme-color" content="#02060b">
+  <title>Supreme Detailing — Obsessive Car Care</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-mark"><img src="logo.png" alt=""><span></span></div>
+    <p>Preparing perfection</p>
+    <div class="loader-line"><i></i></div>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="noise"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-wrap">
+      <button class="brand" type="button" data-view-link="customer" aria-label="Supreme Detailing home">
+        <img src="logo.png" alt="Supreme Detailing logo">
+        <span><b>Supreme</b><small>Detailing Studio</small></span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+      <div class="nav-links" id="navLinks">
+        <a href="services.html"><span>01</span> Services</a>
+        <a href="#packages" data-customer-link><span>02</span> Packages</a>
+        <a href="#process" data-customer-link><span>03</span> Process</a>
+        <button type="button" class="nav-track" data-scroll-to="track"><span>04</span> Track booking</button>
+      </div>
+      <div class="nav-actions">
+        <button class="admin-link" type="button" data-view-link="admin">Admin portal <span>↗</span></button>
+        <a class="nav-cta magnetic" href="services.html">Build my order <span>→</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="customerView" class="app-view is-active">
+      <section class="hero" id="home">
+        <div class="hero-media" data-parallax="0.12"><img src="hero-cinematic-v2.png" alt="Midnight black performance car in a premium detailing studio"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-content page-width">
+          <div class="hero-kicker reveal"><i></i> Pakistan’s premium detailing experience</div>
+          <h1 class="hero-title reveal"><span class="line"><span>Obsessive care.</span></span><span class="line accent-line"><span>Unreal finish.</span></span></h1>
+          <p class="hero-lead reveal">Precision detailing for people who see their car as more than transport. We restore, protect and elevate every surface.</p>
+          <div class="hero-actions reveal">
+            <a class="primary-cta magnetic" href="services.html"><span>Choose your services</span><b>↗</b></a>
+            <a class="text-cta" href="services.html">Explore the service menu <span>↗</span></a>
+          </div>
+          <div class="hero-meta reveal">
+            <div><span class="meta-index">01</span><p><b>Mobile service</b><small>We come to your location</small></p></div>
+            <div><span class="meta-index">02</span><p><b>Studio results</b><small>Professional tools & products</small></p></div>
+            <div><span class="meta-index">03</span><p><b>Live tracking</b><small>Know your booking status</small></p></div>
+          </div>
+        </div>
+        <div class="hero-side-label">Scroll to discover <span></span></div>
+        <div class="availability-pill"><i></i><span>Now booking</span><b>This week</b></div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Paint correction</span><i>✦</i><span>Ceramic protection</span><i>✦</i><span>Interior restoration</span><i>✦</i><span>Mirror finish</span><i>✦</i><span>Mobile detailing</span><i>✦</i>
+          <span>Paint correction</span><i>✦</i><span>Ceramic protection</span><i>✦</i><span>Interior restoration</span><i>✦</i><span>Mirror finish</span><i>✦</i><span>Mobile detailing</span><i>✦</i>
+        </div>
+      </div>
+
+      <section class="manifesto section-pad page-width">
+        <div class="section-tag reveal"><span>01</span> The standard</div>
+        <div class="manifesto-grid">
+          <h2 class="display-title reveal">Clean is expected.<br><em>Supreme is different.</em></h2>
+          <div class="manifesto-copy reveal"><p>We combine meticulous technique, high-grade chemistry and a frankly unreasonable attention to detail. The result isn’t simply a cleaner car—it’s the feeling of meeting it again for the first time.</p><a href="services.html" class="underline-link">Build your service order <span>↗</span></a></div>
+        </div>
+        <div class="visual-grid">
+          <figure class="visual-large reveal tilt-card"><img src="interior-detail-v2.png" alt="Professional steam cleaning of a luxury car interior"><figcaption><span>Interior restoration</span><b>Every stitch. Every surface.</b></figcaption></figure>
+          <div class="visual-stack">
+            <div class="stat-card reveal"><span>Driven by detail</span><strong data-counter="15">0</strong><p>specialist services, one uncompromising standard.</p><i class="stat-ring"></i></div>
+            <figure class="visual-small reveal tilt-card"><img src="ceramic-coating-v2.png" alt="Ceramic coating applied to a glossy performance car"><figcaption><span>Surface science</span><b>Protection you can see.</b></figcaption></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="cinematic-break">
+        <div class="break-media" data-parallax="0.08"><img src="ceramic-coating-v2.png" alt="Perfect water beading on ceramic-coated paint"></div>
+        <div class="break-overlay"></div>
+        <div class="page-width break-content reveal"><span class="section-tag light"><span>03</span> Ceramic science</span><h2>Gloss that looks<br><em>almost liquid.</em></h2><p>Engineered protection. Dramatic depth. Effortless maintenance.</p><a class="primary-cta magnetic" href="services.html"><span>Add Ceramic Coating</span><b>↗</b></a></div>
+        <div class="floating-specs"><div><small>Water contact</small><b>110°+</b></div><div><small>Finish</small><b>Ultra gloss</b></div><div><small>Protection</small><b>Long-term</b></div></div>
+      </section>
+
+      <section class="packages-section section-pad" id="packages">
+        <div class="page-width">
+          <div class="section-head packages-head reveal"><div><div class="section-tag"><span>04</span> Select your finish</div><h2 class="display-title">Three ways to<br><em>reset the standard.</em></h2></div><div class="package-note"><i></i><p><b>Transparent starting prices</b><span>Final quote confirmed before work begins.</span></p></div></div>
+          <div class="package-grid">
+            <article class="package-card reveal tilt-card">
+              <div class="package-watermark">01</div><span class="package-type">The essential</span><h3>Signature<br>Wash</h3><p class="package-desc">A considered weekly reset with hand-finished details.</p><div class="package-price"><small>From</small><strong><sup>PKR</sup> 3,999</strong></div><div class="package-line"></div><ul><li>Paint-safe foam & hand wash</li><li>Interior vacuum and wipe-down</li><li>Glass clarity treatment</li><li>Wheel clean and tyre satin</li></ul><a class="secondary-cta" href="services.html">Build this order <span>↗</span></a>
+            </article>
+            <article class="package-card featured reveal tilt-card">
+              <div class="featured-glow"></div><div class="popular-badge"><i></i> Client favourite</div><div class="package-watermark">02</div><span class="package-type">The transformation</span><h3>Supreme<br>Detail</h3><p class="package-desc">The complete inside-out restoration for a car that feels reborn.</p><div class="package-price"><small>From</small><strong><sup>PKR</sup> 8,999</strong></div><div class="package-line"></div><ul><li>Everything in Signature Wash</li><li>Full interior deep clean</li><li>Steam sanitisation</li><li>Paint gloss enhancement</li></ul><a class="primary-cta" href="services.html"><span>Build this order</span><b>↗</b></a>
+            </article>
+            <article class="package-card reveal tilt-card">
+              <div class="package-watermark">03</div><span class="package-type">The protection</span><h3>Ceramic<br>Pro</h3><p class="package-desc">Our ultimate gloss and protection ritual for serious owners.</p><div class="package-price"><small>From</small><strong><sup>PKR</sup> 24,999</strong></div><div class="package-line"></div><ul><li>Everything in Supreme Detail</li><li>Paint preparation and correction</li><li>Ceramic coating application</li><li>Engine bay and leather care</li></ul><a class="secondary-cta" href="services.html">Build this order <span>↗</span></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section section-pad" id="process">
+        <div class="page-width process-grid">
+          <div class="process-sticky reveal"><div class="section-tag"><span>05</span> The ritual</div><h2 class="display-title">Precision has<br><em>a process.</em></h2><p>Every booking follows a deliberate path from first inspection to final reveal.</p><a href="tel:03009798765" class="call-card"><span>Talk to a specialist</span><b>0300 9798765</b><i>↗</i></a></div>
+          <div class="process-list">
+            <article class="reveal"><span>01</span><div><h3>Inspect & understand</h3><p>We assess paint, materials and problem areas, then agree the right treatment.</p></div><i>15 min</i></article>
+            <article class="reveal"><span>02</span><div><h3>Deep clean & decontaminate</h3><p>Safe chemistry lifts embedded dirt without compromising delicate finishes.</p></div><i>Foundation</i></article>
+            <article class="reveal"><span>03</span><div><h3>Correct & refine</h3><p>Measured correction restores clarity, depth and the sharpness of reflections.</p></div><i>Precision</i></article>
+            <article class="reveal"><span>04</span><div><h3>Protect & reveal</h3><p>Protection is applied, every detail is checked, and your car is ready for its reveal.</p></div><i>Finale</i></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="social-proof">
+        <div class="page-width proof-grid">
+          <div class="proof-score reveal"><span>Detailing without shortcuts</span><strong><b>5.0</b><i>★★★★★</i></strong><p>Built around care, clarity and the finish your car deserves.</p></div>
+          <blockquote class="reveal"><span>“</span><p>The paint looked deeper, the cabin felt completely new, and the whole experience was effortless. This is what premium detailing should feel like.</p><footer><i>AK</i><div><b>Ali K.</b><small>Premium Detail client</small></div></footer></blockquote>
+        </div>
+      </section>
+
+      <section class="booking-section" id="booking">
+        <div class="booking-backdrop"><img src="hero-cinematic-v2.png" alt=""></div>
+        <div class="page-width booking-shell">
+          <div class="booking-intro reveal"><div class="section-tag light"><span>06</span> Reserve your detail</div><h2>Let’s make your<br>car feel <em>new.</em></h2><p>Choose your treatment and preferred time. We’ll review the request and personally confirm your appointment.</p><div class="contact-stack"><a href="tel:03009798765"><i>☎</i><span><small>Call / WhatsApp</small><b>0300 9798765</b></span><em>↗</em></a><div><i>◷</i><span><small>Studio hours</small><b>Mon–Sun · 9am–8pm</b></span></div></div><div class="trust-note"><span>✓</span><p><b>No payment required now</b><small>Request first. Confirm with us.</small></p></div></div>
+
+          <form class="booking-form reveal" id="bookingForm">
+            <div class="form-top"><div><span>Complete booking request</span><h3>Your details & appointment</h3></div><div class="form-step"><b>All details</b><i></i><span>One form</span></div></div>
+            <div class="form-section-label"><span>01</span> Customer information</div>
+            <div class="form-grid">
+              <label class="field"><span>Full name *</span><input type="text" name="name" placeholder="Your full name" autocomplete="name" required></label>
+              <label class="field"><span>Phone / WhatsApp *</span><input type="tel" name="phone" placeholder="0300 1234567" autocomplete="tel" required></label>
+              <label class="field"><span>Email address</span><input type="email" name="email" placeholder="you@example.com" autocomplete="email"></label>
+              <label class="field"><span>Preferred contact *</span><select name="contactMethod" required><option value="WhatsApp">WhatsApp</option><option value="Phone call">Phone call</option><option value="SMS">SMS</option><option value="Email">Email</option></select></label>
+            </div>
+            <p class="field-help">We use these details only to confirm and manage your appointment.</p>
+
+            <div class="form-section-label"><span>02</span> Vehicle information</div>
+            <div class="form-grid">
+              <label class="field"><span>Make & model *</span><input type="text" name="vehicle" placeholder="e.g. Honda Civic" required></label>
+              <label class="field"><span>Model year *</span><input type="number" name="vehicleYear" placeholder="2022" min="1980" max="2030" required></label>
+              <label class="field"><span>Vehicle type *</span><select name="vehicleType" required><option value="">Select vehicle type</option><option>Sedan</option><option>Hatchback</option><option>SUV / Crossover</option><option>Pickup / 4×4</option><option>Coupe / Sports car</option><option>Van</option><option>Other</option></select></label>
+              <label class="field"><span>Registration number</span><input type="text" name="registration" placeholder="e.g. LEA-1234"></label>
+              <label class="field"><span>Vehicle colour</span><input type="text" name="vehicleColor" placeholder="e.g. Pearl white"></label>
+              <label class="field"><span>Current condition</span><select name="vehicleCondition"><option value="Standard use">Standard use</option><option value="Very dusty / muddy">Very dusty / muddy</option><option value="Heavy interior stains">Heavy interior stains</option><option value="Pet hair">Pet hair</option><option value="Smoke / odour">Smoke / odour</option><option value="Needs inspection">Needs inspection</option></select></label>
+            </div>
+
+            <div class="form-section-label"><span>03</span> Appointment & service location</div>
+            <fieldset class="field full location-field"><legend>Where should we detail? *</legend><div class="choice-row"><label class="choice"><input type="radio" name="serviceType" value="Mobile service" checked><span><i>⌖</i><em><b>Come to me</b><small>Mobile service at your location</small></em><strong>✓</strong></span></label><label class="choice"><input type="radio" name="serviceType" value="Workshop"><span><i>⌂</i><em><b>Supreme Studio</b><small>Bring your car to our workshop</small></em><strong>✓</strong></span></label></div></fieldset>
+            <div class="form-grid location-details" id="mobileLocationFields"><label class="field" id="addressField"><span>Complete service address *</span><input type="text" name="address" placeholder="House, street, area and city" autocomplete="street-address"></label><label class="field" id="landmarkField"><span>Nearby landmark</span><input type="text" name="landmark" placeholder="Help our team find you"></label></div>
+            <div class="form-grid schedule-grid"><label class="field"><span>Preferred date *</span><input type="date" name="date" id="bookingDate" required></label><label class="field"><span>Arrival window *</span><select name="time" required><option value="">Select time</option><option>9:00 AM – 11:00 AM</option><option>11:00 AM – 1:00 PM</option><option>1:00 PM – 3:00 PM</option><option>3:00 PM – 5:00 PM</option><option>5:00 PM – 7:00 PM</option></select></label></div>
+            <label class="field full notes-field"><span>Special instructions or vehicle concerns</span><textarea name="notes" rows="4" placeholder="Tell us about stains, scratches, pet hair, access instructions or any special request..."></textarea></label>
+
+            <div class="form-section-label"><span>04</span> Selected services & final bill</div>
+            <input type="hidden" name="package" id="packageSelect" value="Custom Service Order">
+            <div class="booking-order-box" id="bookingOrderBox">
+              <div class="booking-order-head"><div><span>Services in your order</span><h4>Your selected services</h4></div><a href="services.html">Edit services ↗</a></div>
+              <div class="booking-order-empty" id="bookingOrderEmpty"><p>No services selected yet.</p><a href="services.html">Choose services and build your bill</a></div>
+              <div class="booking-order-lines" id="bookingOrderLines"></div>
+              <div class="booking-bill-container">
+                <div class="bill-summary-head"><span>Billing summary</span><b>No payment required now</b></div>
+                <div class="bill-line"><span>Services subtotal</span><b id="bookingSubtotal">PKR 0</b></div>
+                <div class="bill-line"><span>Booking fee</span><b>PKR 0</b></div>
+                <div class="booking-order-total" id="bookingOrderTotalRow" hidden><span>Estimated total</span><strong id="bookingOrderTotal">PKR 0</strong></div>
+                <p class="billing-note">Final price is confirmed after our team reviews the vehicle condition and service location.</p>
+              </div>
+            </div>
+
+            <div class="booking-review-panel">
+              <div class="booking-review-head"><div><span>Before you submit</span><h4>Check your booking details</h4></div><b>Live summary</b></div>
+              <div class="booking-review-grid">
+                <div><small>Customer</small><strong id="reviewCustomer">Add your name and phone</strong></div>
+                <div><small>Vehicle</small><strong id="reviewVehicle">Add your vehicle details</strong></div>
+                <div><small>Appointment</small><strong id="reviewSchedule">Choose a date and time</strong></div>
+                <div><small>Service location</small><strong id="reviewLocation">Mobile service · Add your address</strong></div>
+              </div>
+            </div>
+            <label class="terms"><input type="checkbox" required><i>✓</i><span>I understand this is a request and Supreme Detailing will confirm the appointment.</span></label>
+            <div class="form-submit"><div><small>Estimated booking total</small><strong id="estimatePrice">PKR 0</strong></div><button class="primary-cta magnetic" type="submit"><span>Confirm booking request</span><b>↗</b></button></div>
+          </form>
+        </div>
+      </section>
+
+      <section class="track-section section-pad" id="track">
+        <div class="page-width track-shell reveal">
+          <div class="track-title"><div class="section-tag"><span>07</span> Booking status</div><h2>Already requested?<br><em>Track it live.</em></h2><p>Use the booking ID we gave you and the same phone number.</p></div>
+          <form id="trackingForm" class="tracking-form"><label class="field"><span>Booking ID</span><input name="bookingId" placeholder="SD-0001" required></label><label class="field"><span>Phone number</span><input name="phone" placeholder="0300 1234567" required></label><button class="secondary-cta" type="submit">Check my status <span>↗</span></button></form>
+          <div id="trackingResult" class="tracking-result" aria-live="polite"></div>
+        </div>
+      </section>
+    </div>
+
+    <div id="adminView" class="app-view">
+      <section class="admin-login" id="adminLogin">
+        <div class="login-visual"><img src="hero-cinematic-v2.png" alt="Performance car in Supreme Detailing studio"><div class="login-visual-copy"><span>Supreme control</span><h2>Every booking.<br>Perfectly managed.</h2><p>Review requests, confirm appointments and keep customers informed.</p></div></div>
+        <div class="login-side"><button class="back-link" type="button" data-view-link="customer">← Return to website</button><div class="login-card"><div class="login-brand"><img src="logo.png" alt="Supreme Detailing"><div><b>Supreme</b><span>Detailing · Control</span></div></div><span class="admin-eyebrow">Secure team access</span><h1>Welcome<br>back.</h1><p>Enter the team PIN to access booking control.</p><form id="adminLoginForm"><label class="field"><span>Admin PIN</span><input type="password" name="pin" inputmode="numeric" placeholder="Enter 4-digit PIN" maxlength="4" required></label><button class="primary-cta full-button" type="submit"><span>Enter dashboard</span><b>↗</b></button><small class="demo-hint">Demo access: <b>1234</b></small></form></div><small class="login-foot">Supreme Detailing · Interface by Pixel Studio</small></div>
+      </section>
+
+      <section class="dashboard" id="adminDashboard" hidden>
+        <aside class="sidebar">
+          <div class="sidebar-brand"><img src="logo.png" alt="Supreme Detailing"><div><b>Supreme</b><span>Control room</span></div></div>
+          <nav><small>Workspace</small><button class="active"><span>▦</span> Booking control <i id="sidebarPending">0</i></button><button data-view-link="customer"><span>↗</span> Live website</button></nav>
+          <div class="sidebar-status"><i></i><div><small>System status</small><b>All services online</b></div></div>
+          <div class="sidebar-foot"><div class="admin-avatar">SD</div><div><b>Supreme Team</b><small>Administrator</small></div><button id="logoutButton" title="Sign out">⇥</button></div>
+        </aside>
+        <div class="dashboard-main">
+          <header class="dashboard-header"><div><button class="sidebar-toggle" id="sidebarToggle">☰</button><span>Control room / Bookings</span></div><div class="dash-date" id="dashboardDate"></div><div class="live-status"><i></i> Live</div></header>
+          <div class="dashboard-content">
+            <div class="dashboard-title"><div><span>Booking intelligence</span><h1>Good day, Supreme.</h1><p>Here’s what needs your attention today.</p></div><button class="primary-cta" type="button" id="newBookingButton"><span>+ New booking</span><b>↗</b></button></div>
+            <div class="metric-grid">
+              <article class="metric-feature"><div><small>Awaiting decision</small><strong id="pendingMetric">0</strong><p>Customer requests waiting for review</p></div><span class="metric-trend">Needs action</span><i class="metric-orbit"></i></article>
+              <article><span class="metric-icon green">✓</span><div><small>Confirmed</small><strong id="confirmedMetric">0</strong><p>Appointments approved</p></div></article>
+              <article><span class="metric-icon violet">✦</span><div><small>Completed</small><strong id="completedMetric">0</strong><p>Details delivered</p></div></article>
+              <article><span class="metric-icon amber">◇</span><div><small>All requests</small><strong id="totalMetric">0</strong><p>Lifetime bookings</p></div></article>
+            </div>
+            <div class="booking-panel">
+              <div class="panel-head"><div><span>Customer queue</span><h2>Booking requests <i id="resultCount">0 requests</i></h2></div><div class="panel-tools"><label class="search"><span>⌕</span><input id="adminSearch" placeholder="Search customer, phone or ID"></label><select id="statusFilter"><option value="All">All statuses</option><option>Pending</option><option>Confirmed</option><option>Completed</option><option>Declined</option></select></div></div>
+              <div class="table-wrap"><table><thead><tr><th>Customer</th><th>Booking</th><th>Schedule</th><th>Treatment</th><th>Status</th><th></th></tr></thead><tbody id="bookingTableBody"></tbody></table><div class="empty-state" id="adminEmpty" hidden><span>◇</span><h3>The queue is clear</h3><p>New customer requests will appear here instantly.</p></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top page-width"><div><span>Give your car the care it deserves.</span><h2>Ready for the<br><em>Supreme finish?</em></h2></div><a class="primary-cta magnetic" href="services.html"><span>Build your service order</span><b>↗</b></a></div>
+    <div class="footer-main page-width"><div class="footer-brand"><img src="logo.png" alt="Supreme Detailing"><p>Obsessive automotive care.<br>Delivered at your doorstep.</p></div><div><span>Explore</span><a href="services.html">Services</a><a href="#packages">Packages</a><a href="#process">Our process</a></div><div><span>Contact</span><a href="tel:03009798765">0300 9798765</a><a href="https://wa.me/923009798765">WhatsApp</a><a href="#">@Supreme_detaling</a></div><div><span>Availability</span><p>Monday–Sunday<br>9:00 AM–8:00 PM<br>Mobile service</p></div></div>
+    <div class="footer-bottom page-width"><span>© 2026 Supreme Detailing</span><b>Built for people who notice everything.</b><div class="footer-actions"><span class="studio-credit">Created by <strong>Pixel Studio</strong></span><button data-view-link="admin">Admin ↗</button></div></div>
+  </footer>
+
+  <div class="modal-backdrop" id="successModal" hidden><div class="modal success-modal" role="dialog" aria-modal="true" aria-labelledby="successTitle"><button class="modal-close" data-close-modal="successModal">×</button><div class="modal-ring"><span>✓</span></div><div class="section-tag"><span>Done</span> Request received</div><h2 id="successTitle">You’re on<br>the list.</h2><p>We’ll personally review and confirm your appointment. Save this tracking ID:</p><button class="booking-id-copy" id="successBookingId" title="Copy booking ID">SD-0000 <span>Copy ID</span></button><div class="modal-summary" id="successSummary"></div><button class="primary-cta full-button" data-close-modal="successModal"><span>Back to website</span><b>→</b></button></div></div>
+  <div class="modal-backdrop" id="bookingDetailModal" hidden><div class="modal detail-modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle"><button class="modal-close" data-close-modal="bookingDetailModal">×</button><div id="bookingDetailContent"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <a class="whatsapp-float magnetic" href="https://wa.me/923009798765" aria-label="Chat on WhatsApp"><span>◉</span><i>WhatsApp</i></a>
+</body>
+</html>
