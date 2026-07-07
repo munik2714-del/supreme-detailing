@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Build your Supreme Detailing service order and see your bill instantly.">
+  <meta name="theme-color" content="#02050a">
+  <title>Choose Services — Supreme Detailing</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services.css">
+  <link rel="stylesheet" href="readability.css">
+</head>
+<body class="services-page">
+  <div class="service-loader" id="serviceLoader"><img src="assets/logo.png" alt=""><span>Loading the service studio</span></div>
+  <div class="noise"></div>
+  <div class="scroll-progress" id="serviceProgress"></div>
+
+  <header class="services-header" id="servicesHeader">
+    <nav class="services-nav">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="Supreme Detailing"><span><b>Supreme</b><small>Detailing Studio</small></span></a>
+      <div class="services-nav-links"><a href="index.html">Home</a><a class="active" href="services.html">Services</a><a href="index.html#process">Process</a><a href="index.html#track">Track booking</a></div>
+      <a class="admin-link" href="index.html#admin">Admin portal <span>↗</span></a>
+      <button class="mobile-cart-button" id="mobileCartButton"><span>My bill</span><b id="mobileCartTotal">PKR 0</b><i id="mobileCartCount">0</i></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="service-order-hero">
+      <div class="service-hero-image"><img src="assets/hero-cinematic-v2.png" alt="Premium black car in the Supreme Detailing studio"></div>
+      <div class="service-hero-shade"></div>
+      <div class="page-width service-hero-content">
+        <div class="service-hero-copy"><div class="section-tag light"><span>Menu</span> Build your detail</div><h1>Choose it.<br><em>Build it.</em><br>See the bill.</h1><p>Add any services you want. Your running total updates instantly, and your complete order carries into the booking form.</p><div class="service-hero-actions"><a href="#serviceMenu" class="primary-cta"><span>Start adding services</span><b>↓</b></a><a href="tel:03009798765" class="hero-call">Need advice? <b>0300 9798765</b></a></div></div>
+        <div class="live-bill-card"><span>Live order</span><strong id="heroCartTotal">PKR 0</strong><p><b id="heroCartCount">0</b> services selected</p><i></i></div>
+      </div>
+    </section>
+
+    <section class="service-menu-section" id="serviceMenu">
+      <div class="page-width menu-heading"><div><div class="section-tag"><span>01</span> Service menu</div><h2>Build your own<br><em>Supreme treatment.</em></h2></div><p>Mix exterior, interior and protection services. Add one or build a complete transformation—your bill always stays visible.</p></div>
+      <div class="category-bar-wrap"><div class="page-width category-bar" id="categoryBar"><button class="active" data-category="All">All services <span>12</span></button><button data-category="Exterior">Exterior <span>4</span></button><button data-category="Interior">Interior <span>4</span></button><button data-category="Protection">Protection <span>4</span></button></div></div>
+
+      <div class="page-width catalog-layout">
+        <div class="service-catalog">
+          <div class="catalog-intro"><span id="catalogLabel">All services</span><b id="catalogCount">12 treatments</b></div>
+          <div class="service-card-grid" id="serviceGrid"></div>
+        </div>
+
+        <aside class="order-summary" id="orderSummary">
+          <div class="summary-head"><div><span>Your selection</span><h2>My service bill</h2></div><button id="clearCartButton">Clear</button></div>
+          <div class="empty-cart" id="emptyCart"><span>+</span><h3>Your bill is empty</h3><p>Add services from the menu and they’ll appear here.</p></div>
+          <div class="cart-lines" id="cartLines"></div>
+          <div class="bill-totals" id="billTotals" hidden><div><span>Services subtotal</span><b id="cartSubtotal">PKR 0</b></div><div><span>Booking fee</span><b>PKR 0</b></div><div class="grand-total"><span>Estimated total</span><strong id="cartGrandTotal">PKR 0</strong></div><small>Final price is confirmed by our team before work begins.</small><button class="checkout-button" id="checkoutButton"><span>Continue to booking</span><b>↗</b></button><button class="keep-shopping" id="keepShoppingButton">+ Add another service</button></div>
+          <div class="summary-trust"><span>✓</span><p><b>No payment required now</b><small>Build your order, request a time, then confirm with us.</small></p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="service-assurance">
+      <div class="page-width assurance-grid"><div><span>01</span><p><b>Transparent bill</b><small>See every item and price before booking.</small></p></div><div><span>02</span><p><b>Mix & match</b><small>Build the exact treatment your car needs.</small></p></div><div><span>03</span><p><b>Personally confirmed</b><small>Our team reviews every request with you.</small></p></div></div>
+    </section>
+  </main>
+
+  <footer class="footer services-footer"><div class="footer-top page-width"><div><span>Your perfect detail starts here.</span><h2>Build it your way.<br><em>We’ll perfect it.</em></h2></div><button class="primary-cta" id="footerCartButton"><span>View my bill</span><b>↗</b></button></div><div class="footer-bottom page-width"><span>© 2026 Supreme Detailing</span><b>Obsessive care. Transparent pricing.</b><div class="footer-actions"><span class="studio-credit">Created by <strong>Pixel Studio</strong></span><a href="index.html">Back home ↗</a></div></div></footer>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <div class="service-toast" id="serviceToast"></div>
+  <script src="services.js"></script>
+</body>
+</html>
